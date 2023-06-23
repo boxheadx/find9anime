@@ -10,7 +10,7 @@ def send_req(url):
     try:
         return session.get(url)
     except:
-        return session.get("https://example.com")
+        return session.get("https://google.com")
 
 def test_all_urls(urls):
     with ThreadPoolExecutor(max_workers=THREAD_POOL) as executor:
